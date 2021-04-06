@@ -22,7 +22,7 @@ class BasePage {
   }
 
   async check_is_available() {
-    let title = await this.driver.getTitle();
+    const title = await this.driver.getTitle();
     return new Promise((resolve, reject) => {
       if (title) {
         console.log("Page is available");

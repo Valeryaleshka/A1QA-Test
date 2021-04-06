@@ -5,7 +5,7 @@ describe("Test Case 2. Upload Image ", function () {
   this.timeout(10000);
 
   before(async function () {
-    let baseurl = "http://the-internet.herokuapp.com/upload";
+    const baseurl = "http://the-internet.herokuapp.com/upload";
     await homepage.go_to_url(baseurl);
   });
 
