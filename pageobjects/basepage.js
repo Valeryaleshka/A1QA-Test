@@ -1,9 +1,9 @@
-var webdriver = require("selenium-webdriver");
+const webdriver = require("selenium-webdriver");
 const { By } = require("selenium-webdriver");
 const chrome = require("selenium-webdriver/chrome");
 const chromedriver = require("chromedriver");
 chrome.setDefaultService(new chrome.ServiceBuilder(chromedriver.path).build());
-var driver = new webdriver.Builder().forBrowser("chrome").build();
+const driver = new webdriver.Builder().forBrowser("chrome").build();
 driver.manage().setTimeouts({ implicit: 5000 });
 
 class BasePage {
